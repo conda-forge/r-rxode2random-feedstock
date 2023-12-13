@@ -55,8 +55,9 @@ requirements:
     - liblapack
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
-    - r-bh
+    - {{ native }}gcc-libs           # [win]
+    - {{ native }}libwinpthread-git  # [win]
+    #- r-bh
     - r-rcpp
     - r-rcpparmadillo
     - r-checkmate
